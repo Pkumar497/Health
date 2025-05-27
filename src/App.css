@@ -1,0 +1,38 @@
+:root {
+  --sidebar-width: 240px;
+  --header-height: 80px;
+  --primary-color: #3a86ff;
+  --secondary-color: #8338ec;
+  --success-color: #06d6a0;
+  --danger-color: #ef476f;
+  --warning-color: #ffd166;
+  --light-gray: #f8f9fa;
+  --medium-gray: #e9ecef;
+  --dark-gray: #6c757d;
+  --text-color: #212529;
+  --white: #ffffff;
+  --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: var(--light-gray);
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.app-main {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}

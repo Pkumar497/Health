@@ -1,0 +1,38 @@
+.dashboard-main {
+  flex: 1;
+  overflow-y: auto;
+  padding: 2rem;
+  background-color: var(--light-gray);
+}
+
+.dashboard-middle {
+  display: flex;
+  
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.dashboard-bottom {
+  display: flex;
+  gap: 2rem;
+}
+
+.dashboard-left {
+  flex: 2;
+}
+
+.dashboard-right {
+  flex: 1;
+}
+
+@media (max-width: 1200px) {
+  .dashboard-middle {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 992px) {
+  .dashboard-bottom {
+    flex-direction: column;
+  }
+}

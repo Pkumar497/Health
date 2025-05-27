@@ -1,0 +1,134 @@
+.anatomy-section {
+  flex: 2;
+  background-color: var(--white);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: var(--shadow);
+
+}
+
+
+
+
+.anatomy-container {
+  position: relative;
+  height: 450px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.anatomy-image {
+  height: 100%;
+  object-fit: contain;
+}
+
+
+
+
+
+
+
+#section-left {
+  color: blue;
+  border: none;
+  margin-left: 60%;
+ 
+  top: 10px;
+}
+
+
+
+/* Default (desktop/laptop) styles are already set */
+
+/* Tablet view (up to 1024px) */
+@media (max-width: 1024px) {
+  .anatomy-container {
+    height: 320px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .card-container {
+    width: 80%;
+    position: static;
+    left: 0;
+    margin-top: 1rem;
+  }
+}
+
+/* Mobile view (up to 768px) */
+@media (max-width: 768px) {
+  .anatomy-section {
+    padding: 1rem;
+  }
+  .anatomy-container {
+    height: 200px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .card-container {
+    width: 100%;
+    position: static;
+    left: 0;
+    margin-top: 1rem;
+  }
+  .health-card {
+    padding: 12px;
+    font-size: 0.95rem;
+  }
+  #section-left {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+/* Extra small devices (up to 480px) */
+@media (max-width: 480px) {
+  .anatomy-section {
+    padding: 0.5rem;
+  }
+  .health-card {
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+  .card-container {
+    gap: 0.5rem;
+  }
+}
+
+.progress-bar-background {
+  width: 100%;
+  height: 8px;
+  background: #eee;
+  border-radius: 4px;
+  margin-top: 8px;
+  overflow: hidden;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background: #4caf50;
+  transition: width 0.3s;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;   /* Stack cards vertically */
+  gap: 1rem;
+  width: 20%;
+  position:absolute;
+  left:40%;
+
+}
+
+.health-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  padding: 16px;
+  width: 100%;              /* Make card take full width */
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
